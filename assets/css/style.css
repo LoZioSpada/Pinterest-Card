@@ -1,0 +1,42 @@
+.frame{
+    display: flex;
+
+}
+
+.img{
+    position: relative;
+}
+.style{
+    margin-bottom: 10rem;
+}
+
+.icon-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body:hover{
+    filter: opacity(80%);
+    transition: 0.5s;
+}
+
+button{
+    position: absolute;
+    background-color: gray;
+    border-radius: 30px;
+}
+
+.up-right{
+    top: 602px;
+    left: 40px;
+    font-size: 40px;
+}
