@@ -15,28 +15,57 @@
     flex-direction: row;
 }
 
-.icon{
-    height: 100%;
-    width: 100%;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-body:hover{
+img:hover{
     filter: opacity(80%);
     transition: 0.5s;
 }
 
-button{
+.up-right:hover{
     position: absolute;
-    background-color: gray;
-    border-radius: 30px;
+    top: 598px;
+    left: 46px;
 }
 
 .up-right{
-    top: 602px;
-    left: 40px;
-    font-size: 40px;
+    background-color: lightgray;
+    position: relative;
+    border-radius: 15px;
+    font-size: 37px;
+    transition-property: top, left;
+    transition-duration: 5s;
+    transition-delay: 0s;
+}
+
+.up-up:hover{
+    position: absolute;
+    top: 598px;
+    left: 600px;
+}
+
+.up-up{
+    background-color: lightgray;
+    position: relative;
+    border-radius: 300px;
+    transition-property: top, left;
+    transition-duration: 5s;
+    transition-delay: 0s;
+}
+
+.dots{
+    background-color: lightgray;
+    position: relative;
+    border-radius: 300px;
+    transition-property: top, left;
+    transition-duration: 5s;
+    transition-delay: 0s;
+}
+
+.dots:hover{
+    position: absolute;
+    top: 598px;
+    left: 420px;
+}
+
+*{
+    box-sizing: border-box;
 }
