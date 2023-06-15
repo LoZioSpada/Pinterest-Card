@@ -1,13 +1,9 @@
 .frame{
     display: flex;
-
 }
 
 .img{
-    position: relative;
-}
-.style{
-    margin-bottom: 10rem;
+    position: absolute;
 }
 
 .icon-list{
@@ -15,57 +11,105 @@
     flex-direction: row;
 }
 
-img:hover{
+body:hover .up-right{
     filter: opacity(80%);
     transition: 0.5s;
+    position: absolute;
+    transform: translateY(570px);
+    opacity: 1;
+    cursor: pointer;
 }
 
-.up-right:hover{
+body:hover .up-up{
+    filter: opacity(80%);
+    transition: 0.5s;
     position: absolute;
-    top: 598px;
-    left: 46px;
+    transform: translateY(570px);
+    opacity: 1;
+    cursor: pointer;
+}
+
+body:hover .dots{
+    filter: opacity(80%);
+    transition: 0.5s;
+    position: absolute;
+    transform: translateY(570px);
+    opacity: 1;
+    cursor: pointer;
+}
+
+body:hover .save{
+    filter: opacity(80%);
+    transition: 0.5s;
+    position: absolute;
+    transform: translateY(80px);
+    opacity: 1;
+    cursor: pointer;
+}
+
+body:hover .img{
+    filter: contrast(80%)
 }
 
 .up-right{
     background-color: lightgray;
-    position: relative;
+    display: inline-block;
     border-radius: 15px;
-    font-size: 37px;
-    transition-property: top, left;
-    transition-duration: 5s;
-    transition-delay: 0s;
+    font-size: 40px;
+    position: relative;
+    transform: translateY(630px);
+    left: 50px;
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.up-up:hover{
-    position: absolute;
-    top: 598px;
-    left: 600px;
-}
 
 .up-up{
     background-color: lightgray;
+    display: inline-block;
     position: relative;
-    border-radius: 300px;
-    transition-property: top, left;
-    transition-duration: 5s;
-    transition-delay: 0s;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    left: 350px;
+    transform: translateY(580px);
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .dots{
     background-color: lightgray;
+    display: inline-block;
     position: relative;
-    border-radius: 300px;
-    transition-property: top, left;
-    transition-duration: 5s;
-    transition-delay: 0s;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    left: 410px;
+    transform: translateY(560px);
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.dots:hover{
-    position: absolute;
-    top: 598px;
-    left: 420px;
+.fa-solid{
+    padding-top: 5px;
+    padding-left: 7px;
 }
 
-*{
-    box-sizing: border-box;
+.save{
+    color: white;
+    text-align: center;
+    background-color: red;
+    display: inline-block;
+    border-radius: 15px;
+    padding-top: 7px;
+    height: 50px;
+    width: 70px;
+    font-size: 30px;
+    position: relative;
+    left: 400px;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: 0.5s;
 }
